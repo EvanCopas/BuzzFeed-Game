@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>5.P Starter Code Evan Copas</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="title">
+        <h1>Which animal are you?</h1>
+        <!-- start button -->
+        <div id="start">
+            <button id="userInput2" onclick="returnText()">Start</button>
+        </div>
+    </div>
+    <!-- questions -->
+    <section class="questions">
+        <!-- question 1 -->
+        <div class="question1">
+            <h4>What is your natural habitat?</h4>
+            <button id="waterBtn"><input type="checkbox" id="water">Water</button>
+            <button id="landBtn"><input type="checkbox" id="land">Land</button>
+        </div>
+        <!-- question 2 -->
+        <div class="question2">
+            <h4>Do you want to be big or small</h4>
+            <button id="bigBtn"><input type="checkbox" id="big">Big</button>
+            <button id="smallBtn"><input type="checkbox" id="small">Small</button>
+        </div>
+        <button class="submitBTN" onclick="submitBTN()">Submit Answers</button>
+    </section>
+    <!-- results -->
+    <div class="results">
+        <h1 id="text1">You are a(n) <mark><span id="animalName">animal</span></mark></h1>
+        <button class="retryBtn" onclick="retryBtn2()">Retry</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
